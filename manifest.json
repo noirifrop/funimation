@@ -1,0 +1,21 @@
+{
+  "name": "Funimation Player Fix",
+  "version": "1.0",
+  "description": "Add controlls to the player",
+  "manifest_version": 2,  
+  "content_scripts": [
+    {
+      "matches": ["https://*.funimation.com/*"], 
+      "run_at": "document_idle",    
+      "js": ["contentScript.js"],
+      "all_frames": true,
+      "match_about_blank":true
+    }
+  ],
+  "icons":{
+    "16": "images/Zoidberg16.png",
+      "32": "images/Zoidberg32.png",
+      "48": "images/Zoidberg48.png",
+      "128": "images/Zoidberg128.png"
+  }
+}
